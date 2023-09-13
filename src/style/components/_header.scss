@@ -1,0 +1,91 @@
+header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    h2 {
+        color: $color-heading;
+        font-weight: 900;
+    }
+}
+
+.logo__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    line-height: 40px;
+    border-radius: 5px;
+    background: $color-primary;
+
+    img {
+        width: 100%;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+}
+
+.nav__item {
+    a {
+        color: $color-heading;
+        font-weight: 600 !important;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.register__btn {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: #fff;
+    background: $color-primary;
+    border-radius: 5px;
+    font-family: $police-text;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.mobile__menu {
+    color: $color-heading;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.sticky__header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: #FFF;
+}
